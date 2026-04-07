@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <style>
+        /* 基础样式与全局设定 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 头部：包含简介与照片 */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2rem;
+        }
+        .bio {
+            max-width: 70%;
+        }
+        .bio h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            color: #222;
+        }
+        .bio p {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+        .links {
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+        .links a {
+            margin-right: 12px;
+            color: #333;
+        }
+        .links a:hover {
+            color: #1a0dab;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 章节通用样式 */
+        h2 {
+            font-size: 1.5rem;
+            color: #222;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 新闻板块 */
+        .news-box {
+            height: 150px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 6px;
+        }
+        .news-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 0.95rem;
+        }
+        .news-list li {
+            margin-bottom: 0.6rem;
+        }
+        .news-date {
+            font-weight: 600;
+            margin-right: 10px;
+            color: #555;
+            display: inline-block;
+            width: 90px;
+        }
+
+        /* 论文板块 */
+        .pub-item {
+            display: flex;
+            background: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            transition: box-shadow 0.2s;
+        }
+        .pub-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .pub-img {
+            width: 160px;
+            height: 100px;
+            background-color: #f4f4f4;
+            margin-right: 1.5rem;
+            border-radius: 4px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .pub-info h3 {
+            margin: 0 0 0.3rem 0;
+            font-size: 1.1rem;
+            color: #111;
+        }
+        .pub-authors {
+            margin: 0 0 0.2rem 0;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        .pub-authors strong {
+            color: #000;
+        }
+        .pub-venue {
+            margin: 0 0 0.5rem 0;
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .pub-links a {
+            display: inline-block;
+            margin-right: 0.5rem;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.85rem;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .pub-links a:hover {
+            background-color: #0066cc;
+            color: #fff;
+        }
+
+        /* 教育板块 */
+        .edu-item {
+            margin-bottom: 1rem;
+        }
+        .edu-item h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        .edu-item p {
+            margin: 0.2rem 0 0 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .bio {
+                max-width: 100%;
+            }
+            .profile-img {
+                margin-bottom: 1.5rem;
+            }
+            .pub-item {
+                flex-direction: column;
+            }
+            .pub-img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="bio">
+            <h1>Firstname Lastname</h1>
+            <p>I am a Ph.D. student in Computer Science at <strong>[Your University]</strong>, fortunately advised by <a href="#">Prof. [Advisor Name]</a>.</p>
+            <p>Prior to this, I received my B.S. degree from [Your Undergrad University] in 202X.</p>
+            <p>My research interests lie broadly in <strong>[Research Field 1]</strong> and <strong>[Research Field 2]</strong>, with a focus on [Specific Topic].</p>
+            
+            <div class="links">
+                <a href="mailto:your.email@example.com">[Email]</a> / 
+                <a href="assets/cv.pdf">[CV]</a> / 
+                <a href="#">[Google Scholar]</a> / 
+                <a href="#">[GitHub]</a> / 
+                <a href="#">[Twitter]</a>
+            </div>
+        </div>
+        <img src="https://via.placeholder.com/160" alt="Profile Photo" class="profile-img">
+    </header>
+
+    <section>
+        <h2>News</h2>
+        <div class="news-box">
+            <ul class="news-list">
+                <li><span class="news-date">Oct. 202X</span> 🎉 One paper is accepted to <strong>NeurIPS 202X</strong>!</li>
+                <li><span class="news-date">May. 202X</span> 💼 I will join <strong>[Company Name]</strong> as a Research Intern this summer.</li>
+                <li><span class="news-date">Mar. 202X</span> 🏆 I was awarded the [Scholarship/Award Name].</li>
+                <li><span class="news-date">Aug. 202X</span> 🎓 Started my Ph.D. journey at [University Name].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <p><small>* indicates equal contribution.</small></p>
+
+        <div class="pub-item">
+            <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img">
+            <div class="pub-info">
+                <h3>Your Awesome Paper Title Goes Here</h3>
+                <p class="pub-authors">
+                    <strong>Your Name</strong>, 
+                    <a href="#">Co-author One</a>*, 
+                    <a href="#">Co-author Two</a>*, 
+                    <a href="#">Advisor Name</a>
+                </p>
+                <p class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 202X</p>
+                <div class="pub-links">
+                    <a href="#">PDF</a>
+                    <a href="#">arXiv</a>
+                    <a href="#">Code</a>
+                    <a href="#">Project Page</a>
+                    <a href="#">Video</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img">
+            <div class="pub-info">
+                <h3>Another Great Paper Title Exceeding Expectations</h3>
+                <p class="pub-authors">
+                    <a href="#">Lead Author</a>, 
+                    <strong>Your Name</strong>, 
+                    <a href="#">Advisor Name</a>
+                </p>
+                <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 202X</p>
+                <div class="pub-links">
+                    <a href="#">PDF</a>
+                    <a href="#">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="edu-item">
+            <h3>[Your University]</h3>
+            <p>Ph.D. in Computer Science | Aug. 202X - Present</p>
+        </div>
+        <div class="edu-item">
+            <h3>[Your Undergrad University]</h3>
+            <p>B.S. in Computer Science | Sep. 201X - Jun. 202X</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. Last updated: April 2026. Design inspired by the academic community.</p>
+    </footer>
+
+</body>
+</html>
