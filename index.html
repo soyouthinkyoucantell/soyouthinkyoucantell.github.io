@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Homepage</title>
+    <title>Hongfei(Faye) Zhang - Personal Homepage</title>
+
+    
+    <link rel="icon" href="assets/page_icon.png" type="image/png">
+
     <style>
-        /* 基础样式与全局设定 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -75,7 +78,7 @@
 
         /* 新闻板块 */
         .news-box {
-            height: 150px;
+            height: 110px;
             overflow-y: auto;
             border: 1px solid #eee;
             padding: 1rem;
@@ -93,12 +96,16 @@
         }
         .news-date {
             font-weight: 600;
-            margin-right: 10px;
+            margin-right: 0px;
             color: #555;
             display: inline-block;
+        
             width: 90px;
         }
-
+        .month {
+            display: inline-block;
+            width: 30px; 
+        }
         /* 论文板块 */
         .pub-item {
             display: flex;
@@ -208,92 +215,128 @@
 
     <header>
         <div class="bio">
-            <h1>Firstname Lastname</h1>
-            <p>I am a Ph.D. student in Computer Science at <strong>[Your University]</strong>, fortunately advised by <a href="#">Prof. [Advisor Name]</a>.</p>
-            <p>Prior to this, I received my B.S. degree from [Your Undergrad University] in 202X.</p>
-            <p>My research interests lie broadly in <strong>[Research Field 1]</strong> and <strong>[Research Field 2]</strong>, with a focus on [Specific Topic].</p>
+            <h1>Hongfei (Faye) Zhang</h1>
+            <p>Hi👋! I am currently a Research Assistant in HKUST, fortunately advised by <a href="https://www.yingcong.me/">Prof. Yingcong Chen</a>.</p>
+            <p>My research interests lie broadly in <strong>Computer Vision</strong> and <strong>Machine Learning</strong>. Recently I focus on generative models and 3D understanding. (I love geometry!)</p>
             
+                            <!-- <a href="assets/cv.pdf">[CV]</a> /  -->
+
             <div class="links">
-                <a href="mailto:your.email@example.com">[Email]</a> / 
-                <a href="assets/cv.pdf">[CV]</a> / 
-                <a href="#">[Google Scholar]</a> / 
-                <a href="#">[GitHub]</a> / 
-                <a href="#">[Twitter]</a>
+                <a href="mailto:hongfei@u.nus.edu">[Email]</a> 
+                <a href="https://scholar.google.com/citations?user=pA-Vk0UAAAAJ&hl=en">[Google Scholar]</a> 
+                <a href="https://github.com/soyouthinkyoucantell">[GitHub]</a> 
+                <a href="https://x.com/hongfeizhang0xF">[Twitter]</a>
             </div>
         </div>
-        <img src="https://via.placeholder.com/160" alt="Profile Photo" class="profile-img">
+        <img src="assets\selfie.jpg" alt="Profile Photo" class="profile-img">
     </header>
 
     <section>
         <h2>News</h2>
         <div class="news-box">
             <ul class="news-list">
-                <li><span class="news-date">Oct. 202X</span> 🎉 One paper is accepted to <strong>NeurIPS 202X</strong>!</li>
-                <li><span class="news-date">May. 202X</span> 💼 I will join <strong>[Company Name]</strong> as a Research Intern this summer.</li>
-                <li><span class="news-date">Mar. 202X</span> 🏆 I was awarded the [Scholarship/Award Name].</li>
-                <li><span class="news-date">Aug. 202X</span> 🎓 Started my Ph.D. journey at [University Name].</li>
+                <li><span class="news-date"><span class="month">Mar.</span> 2026</span> <b>DVD</b> is out! Check our <a href="https://dvd-project.github.io//">Project Page</a>!</li>
+                <li><span class="news-date"><span class="month">Nov.</span> 2025</span> <b>DualCamCtrl</b> is out! Check our <a href="https://soyouthinkyoucantell.github.io/dualcamctrl-page/">Project Page</a>!</li>
+                <li><span class="news-date"><span class="month">Jul.</span> 2025</span> Joined HKUST as a research assistant!</li>
             </ul>
         </div>
     </section>
 
     <section>
         <h2>Publications</h2>
-        <p><small>* indicates equal contribution.</small></p>
+        <p><small>* indicates equal contribution. † indicates supervision.</small></p>
 
         <div class="pub-item">
-            <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img">
+            <!-- <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img"> -->
+            <video class="pub-img" autoplay loop muted playsinline>
+                <source src="assets/dvd.mp4" type="video/mp4">
+            </video>
             <div class="pub-info">
-                <h3>Your Awesome Paper Title Goes Here</h3>
+                <h3>DVD: Deterministic Video Depth Estimation with Generative Priors</h3>
+                
                 <p class="pub-authors">
-                    <strong>Your Name</strong>, 
-                    <a href="#">Co-author One</a>*, 
-                    <a href="#">Co-author Two</a>*, 
-                    <a href="#">Advisor Name</a>
+                    <a href="https://x.com/hongfeizhang0xF" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>, 
+                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H. Chen<sup>*</sup></a>, 
+                    <a href="https://chenfei-liao.github.io/" target="_blank" class="author-link">Chenfei Liao<sup>*</sup></a>, 
+                    <a href="https://jingheya.github.io/" target="_blank" class="author-link">Jing He<sup>*</sup></a>, 
+                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank" class="author-link">Zixin Zhang<sup></sup></a>, 
+                    <a href="https://haodong2000.github.io/" target="_blank" class="author-link">Haodong Li<sup></sup></a>, 
+                    <a href="https://scholar.google.com/citations?user=rlKejNUAAAAJ&hl=en" target="_blank" class="author-link">Yihao Liang<sup></sup></a>, 
+                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao Chen<sup></sup></a>, 
+                    <a href="https://amazingren.github.io/" target="_blank" class="author-link">Bin Ren<sup></sup></a>, 
+                    <a href="https://zhengxujosh.github.io/" target="_blank" class="author-link">Xu Zheng<sup></sup></a>, 
+                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai Yang<sup></sup></a>, 
+                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>, 
+                    <a href="https://scholar.google.com/citations?user=M6YfuCTSaKsC&hl=en" target="_blank" class="author-link">Yinchuan Li<sup></sup></a>, 
+                    <a href="https://disi.unitn.it/~sebe/" target="_blank" class="author-link">Nicu Sebe<sup></sup></a>, 
+                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong Chen<sup>†</sup></a>
                 </p>
-                <p class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 202X</p>
+                <p class="pub-venue">arXiv 2026</p>
                 <div class="pub-links">
-                    <a href="#">PDF</a>
-                    <a href="#">arXiv</a>
-                    <a href="#">Code</a>
-                    <a href="#">Project Page</a>
-                    <a href="#">Video</a>
+                    <a href="https://arxiv.org/pdf/2603.12250">PDF</a>
+                    <a href="https://arxiv.org/abs/2603.12250">arXiv</a>
+                    <a href="https://github.com/EnVision-Research/DVD">Code</a>
+                    <a href="https://dvd-project.github.io/">Project Page</a>
+                    <!-- <a href="#">Video</a> -->
                 </div>
             </div>
         </div>
 
         <div class="pub-item">
-            <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img">
+            <!-- <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img"> -->
+             <video class="pub-img" autoplay loop muted playsinline>
+                <source src="assets/dualcamctrl.mp4" type="video/mp4">
+            </video>
             <div class="pub-info">
-                <h3>Another Great Paper Title Exceeding Expectations</h3>
+                <h3>DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation</h3>
                 <p class="pub-authors">
-                    <a href="#">Lead Author</a>, 
-                    <strong>Your Name</strong>, 
-                    <a href="#">Advisor Name</a>
+                    <a href="https://x.com/hongfeizhang0xF" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>, 
+                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao Chen<sup>*</sup></a>, 
+                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank" class="author-link">Zixin Zhang<sup></sup></a>, 
+                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H. Chen<sup></sup></a>, 
+                    <a href="https://qc-ly.github.io/" target="_blank" class="author-link">Yuanhuiyi Lyu<sup></sup></a>, 
+                    <a href="#" target="_blank" class="author-link">Yuqi Zhang<sup>3*</sup></a>, 
+                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai Yang<sup></sup></a>, 
+                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>, 
+                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong Chen<sup>†</sup></a>
                 </p>
-                <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 202X</p>
+                <p class="pub-venue">arXiv 2025</p>
                 <div class="pub-links">
-                    <a href="#">PDF</a>
-                    <a href="#">Code</a>
+                    <a href="https://arxiv.org/pdf/2511.23127">PDF</a>
+                    <a href="https://arxiv.org/abs/2511.23127">arXiv</a>
+                    <a href="https://github.com/EnVision-Research/DualCamCtrl">Code</a>
+                    <a href="https://soyouthinkyoucantell.github.io/dualcamctrl-page/">Project Page</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Education</h2>
-        <div class="edu-item">
-            <h3>[Your University]</h3>
-            <p>Ph.D. in Computer Science | Aug. 202X - Present</p>
-        </div>
-        <div class="edu-item">
-            <h3>[Your Undergrad University]</h3>
-            <p>B.S. in Computer Science | Sep. 201X - Jun. 202X</p>
+        <h2>Miscellaneous</h2>
+        <div class="misc-item" style="line-height: 1.6;">
+            <p>
+                <b>Fun Fact:</b> I actually started my research journey quite late, after finishing my Master's degree in 2025. As a result, my "senior" labmates  are often much younger than I am! It's a really fun dynamic that definitely keeps me humble. 
+            </p>
+            <p>
+            <b>10,000-Hour Rule:</b> I am a massive video game enthusiast. If you combine my playtime across <em>Overwatch</em>, <em>Dota</em>, and <em>Hearthstone</em>, I have logged well over 15,000 hours. (If only I had spent all that time on my research... let's not go there!)
+        </p>
+            <p>
+                <b>Off the Clock:</b> When I'm not wrestling with code or papers, you can usually find me behind a camera lens, watching movies, or digging for hidden gems in the indie music scene. 
+            </p>
         </div>
     </section>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span id="busuanzi_container_site_pv">
+    👀 Vistors <span id="busuanzi_value_site_pv"></span> 次
+</span>
+
+
     <footer>
-        <p>&copy; 2026 Your Name. Last updated: April 2026. Design inspired by the academic community.</p>
+        <p>&copy; 2026 Hongfei (Faye) Zhang. Last updated: April 2026. Design by Claude and Gemini.</p>
     </footer>
 
+    
 </body>
 </html>
