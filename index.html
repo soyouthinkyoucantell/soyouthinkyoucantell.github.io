@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="google-site-verification" content="i9PCYNC5IYaozcEUPU3M_l3c0xPmzDi9Ely6djdJ73E" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hongfei(Faye) Zhang - Personal Homepage</title>
 
-    
+
     <link rel="icon" href="assets/page_icon.png" type="image/png">
 
     <style>
@@ -19,10 +20,12 @@
             padding: 2rem;
             background-color: #fafafa;
         }
+
         a {
             color: #1a0dab;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -36,35 +39,42 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 2rem;
         }
+
         .bio {
             max-width: 70%;
         }
+
         .bio h1 {
             margin: 0 0 0.5rem 0;
             font-size: 2.2rem;
             color: #222;
         }
+
         .bio p {
             margin: 0.5rem 0;
             font-size: 1.05rem;
         }
+
         .links {
             margin-top: 1rem;
             font-weight: 500;
         }
+
         .links a {
             margin-right: 12px;
             color: #333;
         }
+
         .links a:hover {
             color: #1a0dab;
         }
+
         .profile-img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* 章节通用样式 */
@@ -86,27 +96,32 @@
             background-color: #fff;
             border-radius: 6px;
         }
+
         .news-list {
             list-style: none;
             margin: 0;
             padding: 0;
             font-size: 0.95rem;
         }
+
         .news-list li {
             margin-bottom: 0.6rem;
         }
+
         .news-date {
             font-weight: 600;
             margin-right: 0px;
             color: #555;
             display: inline-block;
-        
+
             width: 90px;
         }
+
         .month {
             display: inline-block;
-            width: 30px; 
+            width: 30px;
         }
+
         /* 论文板块 */
         .pub-item {
             display: flex;
@@ -117,9 +132,11 @@
             border: 1px solid #eee;
             transition: box-shadow 0.2s;
         }
+
         .pub-item:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+
         .pub-img {
             width: 160px;
             height: 100px;
@@ -129,25 +146,30 @@
             object-fit: cover;
             flex-shrink: 0;
         }
+
         .pub-info h3 {
             margin: 0 0 0.3rem 0;
             font-size: 1.1rem;
             color: #111;
         }
+
         .pub-authors {
             margin: 0 0 0.2rem 0;
             color: #444;
             font-size: 0.95rem;
         }
+
         .pub-authors strong {
             color: #000;
         }
+
         .pub-venue {
             margin: 0 0 0.5rem 0;
             font-style: italic;
             color: #666;
             font-size: 0.95rem;
         }
+
         .pub-links a {
             display: inline-block;
             margin-right: 0.5rem;
@@ -159,6 +181,7 @@
             text-decoration: none;
             transition: all 0.2s;
         }
+
         .pub-links a:hover {
             background-color: #0066cc;
             color: #fff;
@@ -168,10 +191,12 @@
         .edu-item {
             margin-bottom: 1rem;
         }
+
         .edu-item h3 {
             margin: 0;
             font-size: 1.1rem;
         }
+
         .edu-item p {
             margin: 0.2rem 0 0 0;
             color: #666;
@@ -194,15 +219,19 @@
                 flex-direction: column-reverse;
                 text-align: center;
             }
+
             .bio {
                 max-width: 100%;
             }
+
             .profile-img {
                 margin-bottom: 1.5rem;
             }
+
             .pub-item {
                 flex-direction: column;
             }
+
             .pub-img {
                 width: 100%;
                 height: auto;
@@ -212,20 +241,24 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="bio">
             <h1>Hongfei (Faye) Zhang</h1>
-            <p>Hi👋! I am currently a Research Assistant in HKUST, fortunately advised by <a href="https://www.yingcong.me/">Prof. Yingcong Chen</a>.</p>
-            <p>My research interests lie broadly in <strong>Computer Vision</strong> and <strong>Machine Learning</strong>. Recently I focus on generative models and 3D understanding. (I love geometry!)</p>
-            
-                            <!-- <a href="assets/cv.pdf">[CV]</a> /  -->
+            <p>Hi👋! I am currently a Research Assistant in HKUST, fortunately advised by <a
+                    href="https://www.yingcong.me/">Prof. Yingcong Chen</a>.</p>
+            <p>My research interests lie broadly in <strong>Computer Vision</strong> and <strong>Machine
+                    Learning</strong>. Recently I focus on generative models and 3D understanding. (I love geometry!) I also have long-standing interests in fundamental topics such as representation learning, efficiency, and optimization.
+            </p>
+
+            <!-- <a href="assets/cv.pdf">[CV]</a> /  -->
 
             <div class="links">
-                <a href="mailto:hongfei@u.nus.edu">[Email]</a> 
-                <a href="https://scholar.google.com/citations?user=pA-Vk0UAAAAJ&hl=en">[Google Scholar]</a> 
-                <a href="https://github.com/soyouthinkyoucantell">[GitHub]</a> 
+                <a href="mailto:hongfei@u.nus.edu">[Email]</a>
+                <a href="https://scholar.google.com/citations?user=pA-Vk0UAAAAJ&hl=en">[Google Scholar]</a>
+                <a href="https://github.com/soyouthinkyoucantell">[GitHub]</a>
                 <a href="https://x.com/hongfeizhang0xF">[Twitter]</a>
                 <a href="assets\wechat_qr.png">[Wechat]</a>
             </div>
@@ -237,9 +270,12 @@
         <h2>News</h2>
         <div class="news-box">
             <ul class="news-list">
-                <li><span class="news-date"><span class="month">Mar.</span> 2026</span> <b>DVD</b> is out! Check our <a href="https://dvd-project.github.io/">Project Page</a>!</li>
-                <li><span class="news-date"><span class="month">Nov.</span> 2025</span> <b>DualCamCtrl</b> is out! Check our <a href="https://soyouthinkyoucantell.github.io/dualcamctrl-page/">Project Page</a>!</li>
-                <li><span class="news-date"><span class="month">Jul.</span> 2025</span> Joined HKUST as a research assistant!</li>
+                <li><span class="news-date"><span class="month">Mar.</span> 2026</span> <b>DVD</b> is out! Check our <a
+                        href="https://dvd-project.github.io/">Project Page</a>!</li>
+                <li><span class="news-date"><span class="month">Nov.</span> 2025</span> <b>DualCamCtrl</b> is out! Check
+                    our <a href="https://soyouthinkyoucantell.github.io/dualcamctrl-page/">Project Page</a>!</li>
+                <li><span class="news-date"><span class="month">Jul.</span> 2025</span> Joined HKUST as a research
+                    assistant!</li>
             </ul>
         </div>
     </section>
@@ -255,23 +291,33 @@
             </video>
             <div class="pub-info">
                 <h3>DVD: Deterministic Video Depth Estimation with Generative Priors</h3>
-                
+
                 <p class="pub-authors">
-                    <a href="#" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>, 
-                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H. Chen<sup>*</sup></a>, 
-                    <a href="https://chenfei-liao.github.io/" target="_blank" class="author-link">Chenfei Liao<sup>*</sup></a>, 
-                    <a href="https://jingheya.github.io/" target="_blank" class="author-link">Jing He<sup>*</sup></a>, 
-                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank" class="author-link">Zixin Zhang<sup></sup></a>, 
-                    <a href="https://haodong2000.github.io/" target="_blank" class="author-link">Haodong Li<sup></sup></a>, 
-                    <a href="https://scholar.google.com/citations?user=rlKejNUAAAAJ&hl=en" target="_blank" class="author-link">Yihao Liang<sup></sup></a>, 
-                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao Chen<sup></sup></a>, 
-                    <a href="https://amazingren.github.io/" target="_blank" class="author-link">Bin Ren<sup></sup></a>, 
-                    <a href="https://zhengxujosh.github.io/" target="_blank" class="author-link">Xu Zheng<sup></sup></a>, 
-                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai Yang<sup></sup></a>, 
-                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>, 
-                    <a href="https://scholar.google.com/citations?user=M6YfuCTSaKsC&hl=en" target="_blank" class="author-link">Yinchuan Li<sup></sup></a>, 
-                    <a href="https://disi.unitn.it/~sebe/" target="_blank" class="author-link">Nicu Sebe<sup></sup></a>, 
-                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong Chen<sup>†</sup></a>
+                    <a href="#" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>,
+                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H.
+                        Chen<sup>*</sup></a>,
+                    <a href="https://chenfei-liao.github.io/" target="_blank" class="author-link">Chenfei
+                        Liao<sup>*</sup></a>,
+                    <a href="https://jingheya.github.io/" target="_blank" class="author-link">Jing He<sup>*</sup></a>,
+                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank"
+                        class="author-link">Zixin Zhang<sup></sup></a>,
+                    <a href="https://haodong2000.github.io/" target="_blank" class="author-link">Haodong
+                        Li<sup></sup></a>,
+                    <a href="https://scholar.google.com/citations?user=rlKejNUAAAAJ&hl=en" target="_blank"
+                        class="author-link">Yihao Liang<sup></sup></a>,
+                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao
+                        Chen<sup></sup></a>,
+                    <a href="https://amazingren.github.io/" target="_blank" class="author-link">Bin Ren<sup></sup></a>,
+                    <a href="https://zhengxujosh.github.io/" target="_blank" class="author-link">Xu
+                        Zheng<sup></sup></a>,
+                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai
+                        Yang<sup></sup></a>,
+                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>,
+                    <a href="https://scholar.google.com/citations?user=M6YfuCTSaKsC&hl=en" target="_blank"
+                        class="author-link">Yinchuan Li<sup></sup></a>,
+                    <a href="https://disi.unitn.it/~sebe/" target="_blank" class="author-link">Nicu Sebe<sup></sup></a>,
+                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong
+                        Chen<sup>†</sup></a>
                 </p>
                 <p class="pub-venue">arXiv 2026</p>
                 <div class="pub-links">
@@ -286,21 +332,26 @@
 
         <div class="pub-item">
             <!-- <img src="https://via.placeholder.com/160x100" alt="Paper Teaser" class="pub-img"> -->
-             <video class="pub-img" autoplay loop muted playsinline>
+            <video class="pub-img" autoplay loop muted playsinline>
                 <source src="assets/dualcamctrl.mp4" type="video/mp4">
             </video>
             <div class="pub-info">
                 <h3>DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation</h3>
                 <p class="pub-authors">
-                    <a href="#" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>, 
-                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao Chen<sup>*</sup></a>, 
-                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank" class="author-link">Zixin Zhang<sup></sup></a>, 
-                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H. Chen<sup></sup></a>, 
-                    <a href="https://qc-ly.github.io/" target="_blank" class="author-link">Yuanhuiyi Lyu<sup></sup></a>, 
-                    <a href="#" target="_blank" class="author-link">Yuqi Zhang<sup></sup></a>, 
-                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai Yang<sup></sup></a>, 
-                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>, 
-                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong Chen<sup>†</sup></a>
+                    <a href="#" target="_blank" class="author-link">Hongfei Zhang<sup>*</sup></a>,
+                    <a href="https://khao123.github.io/" target="_blank" class="author-link">Kanghao
+                        Chen<sup>*</sup></a>,
+                    <a href="https://scholar.google.com/citations?hl=en&user=BbZ0mwoAAAAJ" target="_blank"
+                        class="author-link">Zixin Zhang<sup></sup></a>,
+                    <a href="https://haroldchen19.github.io/" target="_blank" class="author-link">Harold H.
+                        Chen<sup></sup></a>,
+                    <a href="https://qc-ly.github.io/" target="_blank" class="author-link">Yuanhuiyi Lyu<sup></sup></a>,
+                    <a href="#" target="_blank" class="author-link">Yuqi Zhang<sup></sup></a>,
+                    <a href="https://andysonys.github.io/" target="_blank" class="author-link">Shuai
+                        Yang<sup></sup></a>,
+                    <a href="https://redrock303.github.io/" target="_blank" class="author-link">Kun Zhou<sup></sup></a>,
+                    <a href="https://www.yingcong.me/" target="_blank" class="author-link">Ying-Cong
+                        Chen<sup>†</sup></a>
                 </p>
                 <p class="pub-venue">arXiv 2025</p>
                 <div class="pub-links">
@@ -317,51 +368,59 @@
         <h2>Miscellaneous</h2>
         <div class="misc-item" style="line-height: 1.6;">
             <p>
-                <b>Fun Fact:</b> I actually started my research journey quite late, after finishing my Master's degree in 2025. As a result, my "senior" labmates  are often much younger than I am! It's a really fun dynamic that definitely keeps me humble. 
+                <b>Fun Fact:</b> I actually started my research journey quite late, after finishing my Master's degree
+                in 2025. As a result, my "senior" labmates are often much younger than I am! It's a really fun dynamic
+                that definitely keeps me humble.
             </p>
             <p>
-            <b>10,000-Hour Rule:</b> I am a massive video game enthusiast. If you combine my playtime across <em>Overwatch</em>, <em>Dota</em>, and <em>Hearthstone</em>, I have logged well over 15,000 hours. (If only I had spent all that time on my research... let's not go there!)
-        </p>
-            <p>
-                <b>Off the Clock:</b> When I'm not wrestling with code or papers, you can usually find me behind a camera lens, watching movies, or digging for hidden gems in the indie music scene. 
+                <b>10,000-Hour Rule:</b> I am a massive video game enthusiast. If you combine my playtime across
+                <em>Overwatch</em>, <em>Dota</em>, and <em>Hearthstone</em>, I have logged well over 15,000 hours. (If
+                only I had spent all that time on my research... let's not go there!)
             </p>
-        <!-- <p>
+            <p>
+                <b>Off the Clock:</b> When I'm not wrestling with code or papers, you can usually find me behind a
+                camera lens, watching movies, or digging for hidden gems in the indie music scene.
+            </p>
+            <p>
             🙏 <b>Acknowledgments:</b> Research is never a solo journey. I am deeply grateful to <a href="acknowledgments.html" style="color: #0366d6; text-decoration: none;">the bunch of people who taught me everything I know</a>.
-        </p> -->
-    </div>
+        </p>
+        </div>
         </div>
     </section>
 
-<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+    <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 
 
 
     <!-- Default Statcounter code for mypersonalwebsite
     https://soyouthinkyoucantell.github.io/ -->
     <script type="text/javascript">
-    var sc_project=13214796; 
-    var sc_invisible=1; 
-    var sc_security="8f464644"; 
+        var sc_project = 13214796;
+        var sc_invisible = 1;
+        var sc_security = "8f464644"; 
     </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics"
-    href="https://statcounter.com/" target="_blank"><img class="statcounter"
-    src="https://c.statcounter.com/13214796/0/8f464644/1/" alt="Web Analytics"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                    class="statcounter" src="https://c.statcounter.com/13214796/0/8f464644/1/" alt="Web Analytics"
+                    referrerPolicy="no-referrer-when-downgrade"></a></div>
+    </noscript>
     <!-- End of Statcounter Code -->
 
 
 
     <footer>
-            <span id="busuanzi_container_site_pv">
-    👀 Vistors <span id="busuanzi_value_site_pv"></span> 
-</span>
+        <span id="busuanzi_container_site_pv">
+            👀 Vistors <span id="busuanzi_value_site_pv"></span>
+        </span>
         <div style="max-width: 250px; margin: 0 auto 20px auto;">
-            <script type="text/javascript" id="clustrmaps" src="https://clustrmaps.com/map_v2.js?d=eWqwE25ylj6g-MNO79vMIwXd1u3AmiLfcbpzUyxnY1I&cl=ffffff&w=a"></script>
-        </div>      
-        <p>&copy; 2026 Hongfei (Faye) Zhang. Created: April 2026. Last updated: April 2026. Design by Claude and Gemini.</p>
+            <script type="text/javascript" id="clustrmaps"
+                src="https://clustrmaps.com/map_v2.js?d=eWqwE25ylj6g-MNO79vMIwXd1u3AmiLfcbpzUyxnY1I&cl=ffffff&w=a"></script>
+        </div>
+        <p>&copy; 2026 Hongfei (Faye) Zhang. Created: April 2026. Last updated: April 2026. Design by Claude and Gemini.
+        </p>
     </footer>
 
 </body>
+
 </html>
